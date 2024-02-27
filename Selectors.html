@@ -25,6 +25,53 @@
         footer,span{
             color: pink;
         }
+
+        /* child selector */
+        div > p{
+            color: blue;
+        }
+
+        /* descendant selector */
+
+        div  p{
+            color: red;
+        }
+
+        /* universal selector */
+        *{
+            margin-left: auto;
+        }
+
+        /* pseudo Selector */
+
+        a:visited{
+            color: yellow;
+        }
+
+        a:hover{
+            color: pink;
+        }
+
+        .box:first-child{
+            background-color: red;
+        }
+        /* 
+        .box::first-line{
+            color:yellow
+        } */
+
+        /* attribute selector */
+        [data-color="primary"]{
+            background-color: blueviolet;
+        }
+
+        .box1::after{
+            content: " Sami is good";
+        }
+
+
+
+       
     </style>
 </head>
 <body>
@@ -35,5 +82,30 @@
 
     <span>This is 4 span</span>
     <footer>This is 5 footer</footer>
+
+    <div>
+        <p>Hello</p>
+    </div>
+
+    <div>
+        <article>
+            <p>Hello</p>
+        </article>
+       
+    </div>
+
+    <a href="https://www.google.com/">Go To google</a>
+
+    <!-- ----------------------------------------------------- -->
+
+    <h3>MORE ON Selectors</h3>
+
+    <div class="boxes">
+    <div class="box">Hey i am a box</div>
+    <div class="box1">Hey i am a box</div>
+    <div class="box">Hey i am a box</div>
+    <div data-color="primary" class="box">Hey i am a box</div>
+</div>
+
 </body>
 </html>

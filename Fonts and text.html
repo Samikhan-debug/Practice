@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS</title>
+    <title>Fonts and Text</title>
 
     <style>
         p{
             /* this is font stack. if one not available move to next font option */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 44px;
-            line-height: 1.1em;
+            /* space between paragraphs */
+            line-height: 14px;
+            text-transform: lowercase;
+            text-decoration: underline;
+            text-decoration-style: dotted;
+
         }
 
         span{
             font-style: italic;
-            font-weight: bold;
+            font-weight: bold;       
         }
 
         #new{
@@ -61,5 +66,10 @@
     <p id="new">This is new paragraph</p>
     <p id="new2">This is new 2 paragraph</p>
     <p id="new3">This is new 3 paragraph</p>
+
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
+    <p>Hello</p>
 </body>
 </html>
